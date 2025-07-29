@@ -171,7 +171,10 @@ Edita el contenido directamente en `app/page.tsx` en las secciones correspondien
 
 Para soporte o consultas sobre el proyecto:
 - Email: info@academialuciamoreno.com
+- Teléfono: +34 600 116 127
 - Instagram: @academiadedanzaluciamoreno
+- TikTok: @academiadanzaluciamoreno
+- Dirección: Centro Comercial Montepinar, Local n11, Murcia
 
 ## 📄 Licencia
 

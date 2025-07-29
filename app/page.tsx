@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -30,7 +32,13 @@ export default function AcademiaDanzaLuciaMoreno() {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Crown className="h-8 w-8 text-flamenco-red-900" />
+              <Image
+                src="/logo.jpg"
+                alt="Logo Academia Lucía Moreno"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <h1 className="text-2xl font-serif font-bold text-flamenco-red-900">Academia Lucía Moreno</h1>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -116,13 +124,17 @@ export default function AcademiaDanzaLuciaMoreno() {
             <div className="space-y-6">
               <h3 className="text-3xl font-serif font-bold text-flamenco-red-900">Una Historia de Pasión</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
-                La Academia de Danza Lucía Moreno nace del sueño de crear un espacio donde el arte flamenco y la danza
-                española se vivan con autenticidad y profesionalidad. Fundada en el corazón de Almería, nuestra academia
-                se ha convertido en un referente de la formación artística integral.
+                ¡Hola a todos! Soy Lucía Moreno, fundadora y directora de la Academia de Danza Lucía Moreno. 
+                Estoy muy emocionada de poder llevar a cabo este nuevo proyecto, con lo que significa para mí la danza.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Creemos en el crecimiento artístico y personal de nuestras alumnas, ofreciendo una formación que va más
-                allá de la técnica, cultivando la expresión, la disciplina y el amor por nuestras tradiciones andaluzas.
+                Mi amor por la danza me ha llevado a crear esta academia, donde quiero compartir mis conocimientos 
+                y experiencias con todos vosotros. Nuestro objetivo es que nuestros alumnos consigan una técnica 
+                correcta mientras que disfruten y aprendan en cada una de sus clases sin importar su nivel ni su experiencia.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Si estás buscando un lugar donde puedas crecer, expresarte libremente y formar parte de una gran 
+                familia apasionada por la danza, no dudes en preguntarnos cualquier duda que tengas.
               </p>
               <div className="grid grid-cols-3 gap-4 pt-6">
                 <div className="text-center">
@@ -169,22 +181,22 @@ export default function AcademiaDanzaLuciaMoreno() {
                 title: "Flamenco",
                 description: "La esencia del arte andaluz. Desde iniciación hasta nivel profesional.",
                 image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                ages: "Desde 4 años",
+                ages: "Todos los niveles",
                 color: "bg-flamenco-red-900",
               },
               {
-                title: "Danza Española",
-                description: "Técnica clásica española con castañuelas, mantón y abanico.",
-                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                ages: "Desde 6 años",
-                color: "bg-andalusian-gold-600",
-              },
-              {
-                title: "Ballet",
+                title: "Clásico",
                 description: "Base técnica fundamental para todas las disciplinas de danza.",
                 image: "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
                 ages: "Desde 3 años",
                 color: "bg-gray-800",
+              },
+              {
+                title: "Urbano",
+                description: "Danza moderna y contemporánea con ritmos urbanos.",
+                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                ages: "Todas las edades",
+                color: "bg-purple-700",
               },
               {
                 title: "Sevillanas",
@@ -194,18 +206,18 @@ export default function AcademiaDanzaLuciaMoreno() {
                 color: "bg-green-700",
               },
               {
-                title: "Preparación Conservatorio",
+                title: "Formación Profesional",
                 description: "Formación específica para acceso a conservatorios profesionales.",
                 image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
                 ages: "10-18 años",
-                color: "bg-purple-700",
+                color: "bg-blue-700",
               },
               {
-                title: "Danza Contemporánea",
-                description: "Expresión moderna fusionada con raíces flamencas.",
+                title: "Yoga & Funcional",
+                description: "Entrenamiento físico y mental para complementar la danza.",
                 image: "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                ages: "Desde 8 años",
-                color: "bg-blue-700",
+                ages: "Adultos",
+                color: "bg-andalusian-gold-600",
               },
             ].map((disciplina, index) => (
               <Card key={index} className="group hover:shadow-2xl transition-all duration-300 overflow-hidden">
@@ -250,7 +262,7 @@ export default function AcademiaDanzaLuciaMoreno() {
               <div className="md:flex">
                 <div className="md:w-1/2">
                   <Image
-                    src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    src="/lucia-1.jpg"
                     alt="Lucía Moreno - Directora"
                     width={500}
                     height={600}
@@ -290,9 +302,14 @@ export default function AcademiaDanzaLuciaMoreno() {
                   </div>
 
                   <div className="flex space-x-4 mt-6">
-                    <Button variant="outline" size="sm" className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent"
+                      onClick={() => window.open('https://www.instagram.com/academiadedanzaluciamoreno/', '_blank')}
+                    >
                       <Instagram className="h-4 w-4 mr-2" />
-                      @luciamoreno
+                      @academiadedanzaluciamoreno
                     </Button>
                   </div>
                 </div>
@@ -315,14 +332,14 @@ export default function AcademiaDanzaLuciaMoreno() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
+              "/lucia-1.jpg",
+              "/lucia-2.jpg",
               "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
               "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
               "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
               "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
               "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
               "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-              "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-              "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
             ].map((image, index) => (
               <div key={index} className="group relative overflow-hidden rounded-lg aspect-square">
                 <Image
@@ -337,7 +354,10 @@ export default function AcademiaDanzaLuciaMoreno() {
           </div>
 
           <div className="text-center mt-12">
-            <Button className="bg-flamenco-red-900 hover:bg-flamenco-red-800 text-white">
+            <Button 
+              className="bg-flamenco-red-900 hover:bg-flamenco-red-800 text-white"
+              onClick={() => window.open('https://www.instagram.com/academiadedanzaluciamoreno/', '_blank')}
+            >
               <Instagram className="mr-2 h-5 w-5" />
               Ver más en Instagram
             </Button>
@@ -414,7 +434,7 @@ export default function AcademiaDanzaLuciaMoreno() {
                     <MapPin className="h-6 w-6 text-flamenco-red-900" />
                     <div>
                       <p className="font-semibold">Dirección</p>
-                      <p className="text-gray-600">Calle del Arte, 15, 04001 Almería</p>
+                      <p className="text-gray-600">Centro Comercial Montepinar, Local n11, Murcia</p>
                     </div>
                   </div>
 
@@ -422,7 +442,7 @@ export default function AcademiaDanzaLuciaMoreno() {
                     <Phone className="h-6 w-6 text-flamenco-red-900" />
                     <div>
                       <p className="font-semibold">Teléfono</p>
-                      <p className="text-gray-600">+34 950 123 456</p>
+                      <p className="text-gray-600">+34 600 116 127</p>
                     </div>
                   </div>
 
@@ -446,17 +466,23 @@ export default function AcademiaDanzaLuciaMoreno() {
                   <div className="pt-6">
                     <h4 className="font-semibold text-flamenco-red-900 mb-4">Síguenos en Redes Sociales</h4>
                     <div className="flex space-x-4">
-                      <Button variant="outline" size="sm" className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent"
+                        onClick={() => window.open('https://www.instagram.com/academiadedanzaluciamoreno/', '_blank')}
+                      >
                         <Instagram className="h-4 w-4 mr-2" />
                         Instagram
                       </Button>
-                      <Button variant="outline" size="sm" className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent">
-                        <Facebook className="h-4 w-4 mr-2" />
-                        Facebook
-                      </Button>
-                      <Button variant="outline" size="sm" className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent">
-                        <Youtube className="h-4 w-4 mr-2" />
-                        YouTube
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent"
+                        onClick={() => window.open('https://www.tiktok.com/@academiadanzaluciamoreno', '_blank')}
+                      >
+                        <Music className="h-4 w-4 mr-2" />
+                        TikTok
                       </Button>
                     </div>
                   </div>
@@ -497,11 +523,16 @@ export default function AcademiaDanzaLuciaMoreno() {
                       <select className="w-full p-3 border border-gray-300 rounded-md">
                         <option>Selecciona una disciplina</option>
                         <option>Flamenco</option>
-                        <option>Danza Española</option>
-                        <option>Ballet</option>
+                        <option>Clásico</option>
+                        <option>Urbano</option>
                         <option>Sevillanas</option>
-                        <option>Preparación Conservatorio</option>
-                        <option>Danza Contemporánea</option>
+                        <option>Formación Profesional</option>
+                        <option>Yoga</option>
+                        <option>Funcional</option>
+                        <option>Barre</option>
+                        <option>Salsa y Bachata</option>
+                        <option>Zumba Funcional</option>
+                        <option>Clases Privadas</option>
                       </select>
                     </div>
 
@@ -520,12 +551,17 @@ export default function AcademiaDanzaLuciaMoreno() {
           {/* Mapa */}
           <div className="mt-12">
             <Card className="overflow-hidden">
-              <div className="h-96 bg-gray-200 flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <MapPin className="h-12 w-12 mx-auto mb-4" />
-                  <p className="text-lg font-semibold">Mapa de Google Maps</p>
-                  <p>Calle del Arte, 15, 04001 Almería</p>
-                </div>
+              <div className="h-96">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.2085414778576!2d-1.1026459252954135!3d38.042226896710645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6383f1e4dd66ed%3A0xbd89ade9d311a043!2sAcademia%20de%20Danza%20Luc%C3%ADa%20Moreno!5e0!3m2!1ses!2ses!4v1753825890773!5m2!1ses!2ses" 
+                  width="100%" 
+                  height="100%" 
+                  style={{border:0}} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación Academia de Danza Lucía Moreno"
+                ></iframe>
               </div>
             </Card>
           </div>
@@ -546,87 +582,70 @@ export default function AcademiaDanzaLuciaMoreno() {
           <div className="max-w-6xl mx-auto">
             <Card className="overflow-hidden">
               <CardHeader className="bg-flamenco-red-900 text-white text-center">
-                <CardTitle className="text-2xl font-serif">Horarios por Disciplina y Edad</CardTitle>
+                <CardTitle className="text-2xl font-serif">HORARIO 25/26</CardTitle>
               </CardHeader>
               <CardContent className="p-0">
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead className="bg-gray-50">
                       <tr>
-                        <th className="px-6 py-4 text-left font-semibold text-gray-900">Disciplina</th>
-                        <th className="px-6 py-4 text-left font-semibold text-gray-900">Edad</th>
-                        <th className="px-6 py-4 text-left font-semibold text-gray-900">Horario</th>
-                        <th className="px-6 py-4 text-left font-semibold text-gray-900">Día</th>
-                        <th className="px-6 py-4 text-left font-semibold text-gray-900">Precio/Mes</th>
+                        <th className="px-4 py-3 text-center font-semibold text-gray-900 border-r">HORARIO</th>
+                        <th className="px-4 py-3 text-center font-semibold text-gray-900 border-r">LUNES</th>
+                        <th className="px-4 py-3 text-center font-semibold text-gray-900 border-r">MARTES</th>
+                        <th className="px-4 py-3 text-center font-semibold text-gray-900 border-r">MIÉRCOLES</th>
+                        <th className="px-4 py-3 text-center font-semibold text-gray-900 border-r">JUEVES</th>
+                        <th className="px-4 py-3 text-center font-semibold text-gray-900">VIERNES</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
-                      {[
-                        {
-                          disciplina: "Ballet Infantil",
-                          edad: "3-5 años",
-                          horario: "17:00-18:00",
-                          dia: "Martes y Jueves",
-                          precio: "45€",
-                        },
-                        {
-                          disciplina: "Flamenco Iniciación",
-                          edad: "6-8 años",
-                          horario: "18:00-19:00",
-                          dia: "Lunes y Miércoles",
-                          precio: "50€",
-                        },
-                        {
-                          disciplina: "Sevillanas",
-                          edad: "Todas",
-                          horario: "19:00-20:00",
-                          dia: "Viernes",
-                          precio: "35€",
-                        },
-                        {
-                          disciplina: "Danza Española",
-                          edad: "9-12 años",
-                          horario: "17:30-18:30",
-                          dia: "Martes y Jueves",
-                          precio: "55€",
-                        },
-                        {
-                          disciplina: "Flamenco Intermedio",
-                          edad: "13-16 años",
-                          horario: "19:00-20:30",
-                          dia: "Lunes y Miércoles",
-                          precio: "65€",
-                        },
-                        {
-                          disciplina: "Preparación Conservatorio",
-                          edad: "14-18 años",
-                          horario: "20:30-22:00",
-                          dia: "Lunes a Jueves",
-                          precio: "85€",
-                        },
-                        {
-                          disciplina: "Flamenco Adultos",
-                          edad: "Adultos",
-                          horario: "20:00-21:00",
-                          dia: "Martes y Jueves",
-                          precio: "60€",
-                        },
-                        {
-                          disciplina: "Ballet Clásico",
-                          edad: "8-12 años",
-                          horario: "16:00-17:00",
-                          dia: "Lunes y Miércoles",
-                          precio: "50€",
-                        },
-                      ].map((clase, index) => (
-                        <tr key={index} className="hover:bg-gray-50">
-                          <td className="px-6 py-4 font-medium text-flamenco-red-900">{clase.disciplina}</td>
-                          <td className="px-6 py-4 text-gray-700">{clase.edad}</td>
-                          <td className="px-6 py-4 text-gray-700">{clase.horario}</td>
-                          <td className="px-6 py-4 text-gray-700">{clase.dia}</td>
-                          <td className="px-6 py-4 font-semibold text-green-600">{clase.precio}</td>
-                        </tr>
-                      ))}
+                      <tr className="hover:bg-gray-50">
+                        <td className="px-4 py-3 text-center font-medium text-gray-900 border-r bg-gray-50">10:00</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">YOGA</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">BARRE</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">YOGA</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">BARRE</td>
+                        <td className="px-4 py-3 text-center text-gray-400">-</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50">
+                        <td className="px-4 py-3 text-center font-medium text-gray-900 border-r bg-gray-50">11:00</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">FUNCIONAL</td>
+                        <td className="px-4 py-3 text-center text-gray-400 border-r">-</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">FUNCIONAL</td>
+                        <td className="px-4 py-3 text-center text-gray-400 border-r">-</td>
+                        <td className="px-4 py-3 text-center text-gray-400">-</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50">
+                        <td className="px-4 py-3 text-center font-medium text-gray-900 border-r bg-gray-50">17:30</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">CLÁSICO 1</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">URBANO 1</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">FLAMENCO 1</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">FORMACIÓN PROFESIONAL</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium">GRUPO +</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50">
+                        <td className="px-4 py-3 text-center font-medium text-gray-900 border-r bg-gray-50">18:30</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">CLÁSICO 2</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">FLAMENCO 2</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">URBANO 2</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">CLASES PRIVADAS</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium">FORMACIÓN PROFESIONAL</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50">
+                        <td className="px-4 py-3 text-center font-medium text-gray-900 border-r bg-gray-50">19:30</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">FLAMENCO ADULTOS</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">URBANO 3</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">FLAMENCO 3</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">FUNCIONAL</td>
+                        <td className="px-4 py-3 text-center text-gray-400">-</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50">
+                        <td className="px-4 py-3 text-center font-medium text-gray-900 border-r bg-gray-50">20:30</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">BARRE</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">SALSA Y BACHATA</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">SEVILLANAS</td>
+                        <td className="px-4 py-3 text-center text-flamenco-red-900 font-medium border-r">ZUMBA FUNCIONAL</td>
+                        <td className="px-4 py-3 text-center text-gray-400">-</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -643,6 +662,7 @@ export default function AcademiaDanzaLuciaMoreno() {
                   size="lg"
                   variant="outline"
                   className="border-flamenco-red-900 text-flamenco-red-900 hover:bg-flamenco-red-900 hover:text-white py-4 bg-transparent"
+                  onClick={() => window.open('tel:+34600116127')}
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   Llamar para Información
@@ -667,21 +687,34 @@ export default function AcademiaDanzaLuciaMoreno() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Crown className="h-8 w-8 text-flamenco-red-500" />
+                <Image
+                  src="/logo.jpg"
+                  alt="Logo Academia Lucía Moreno"
+                  width={32}
+                  height={32}
+                  className="rounded-full"
+                />
                 <h3 className="text-xl font-serif font-bold">Academia Lucía Moreno</h3>
               </div>
               <p className="text-gray-400 mb-4">
                 Pasión, disciplina y arte en cada paso. La mejor formación en danza española y flamenco en Almería.
               </p>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="sm" className="text-white hover:text-flamenco-red-500">
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="text-white hover:text-flamenco-red-500"
+                  onClick={() => window.open('https://www.instagram.com/academiadedanzaluciamoreno/', '_blank')}
+                >
                   <Instagram className="h-5 w-5" />
                 </Button>
-                <Button variant="ghost" size="sm" className="text-white hover:text-flamenco-red-500">
-                  <Facebook className="h-5 w-5" />
-                </Button>
-                <Button variant="ghost" size="sm" className="text-white hover:text-flamenco-red-500">
-                  <Youtube className="h-5 w-5" />
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="text-white hover:text-flamenco-red-500"
+                  onClick={() => window.open('https://www.tiktok.com/@academiadanzaluciamoreno', '_blank')}
+                >
+                  <Music className="h-5 w-5" />
                 </Button>
               </div>
             </div>
@@ -696,12 +729,12 @@ export default function AcademiaDanzaLuciaMoreno() {
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Danza Española
+                    Clásico
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Ballet
+                    Urbano
                   </Link>
                 </li>
                 <li>
@@ -711,7 +744,12 @@ export default function AcademiaDanzaLuciaMoreno() {
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Preparación Conservatorio
+                    Formación Profesional
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Yoga & Funcional
                   </Link>
                 </li>
               </ul>
@@ -753,11 +791,11 @@ export default function AcademiaDanzaLuciaMoreno() {
               <div className="space-y-2 text-gray-400">
                 <p className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
-                  Calle del Arte, 15, Almería
+                  Centro Comercial Montepinar, Local n11, Murcia
                 </p>
                 <p className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  +34 950 123 456
+                  +34 600 116 127
                 </p>
                 <p className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
@@ -775,7 +813,10 @@ export default function AcademiaDanzaLuciaMoreno() {
 
       {/* WhatsApp Float Button */}
       <div className="fixed bottom-6 right-6 z-50">
-        <Button className="bg-green-500 hover:bg-green-600 text-white rounded-full w-14 h-14 shadow-lg">
+        <Button 
+          className="bg-green-500 hover:bg-green-600 text-white rounded-full w-14 h-14 shadow-lg"
+          onClick={() => window.open('https://wa.me/34600116127?text=Hola! Me gustaría información sobre las clases de danza', '_blank')}
+        >
           <Phone className="h-6 w-6" />
         </Button>
       </div>

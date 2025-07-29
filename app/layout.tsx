@@ -5,9 +5,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Academia de Danza Lucía Moreno - Flamenco y Danza Española en Almería',
-  description: 'Descubre el arte del flamenco y la danza española en el corazón de Almería. Formación profesional y humana con Lucía Moreno.',
-  keywords: 'flamenco, danza española, ballet, sevillanas, academia de danza, Almería, Lucía Moreno',
+  title: 'Academia de Danza Lucía Moreno - Flamenco y Danza en Murcia',
+  description: 'Descubre el arte del flamenco y la danza en el corazón de Murcia. Formación profesional y humana con Lucía Moreno.',
+  keywords: 'flamenco, danza española, ballet, sevillanas, academia de danza, Murcia, Lucía Moreno, yoga, funcional, urbano, salsa, bachata',
   authors: [{ name: 'Academia de Danza Lucía Moreno' }],
   openGraph: {
     title: 'Academia de Danza Lucía Moreno',
