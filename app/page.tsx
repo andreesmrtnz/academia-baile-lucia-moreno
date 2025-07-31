@@ -70,7 +70,7 @@ export default function AcademiaDanzaLuciaMoreno() {
       <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
         <Image
-          src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src="/hero.jpg"
           alt="Bailarina de flamenco en actuación"
           fill
           className="object-cover"
@@ -81,9 +81,9 @@ export default function AcademiaDanzaLuciaMoreno() {
             Pasión, Disciplina y Arte
             <span className="block text-3xl md:text-4xl text-andalusian-gold-300 mt-2">en cada paso</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Descubre el arte del flamenco y la danza española en el corazón de Almería
-          </p>
+                     <p className="text-xl md:text-2xl mb-8 text-gray-200">
+             Descubre el arte del flamenco y la danza española en el corazón de Murcia
+           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-flamenco-red-900 hover:bg-flamenco-red-800 text-white px-8 py-4 text-lg flamenco-shadow">
               <Sparkles className="mr-2 h-5 w-5" />
@@ -114,8 +114,8 @@ export default function AcademiaDanzaLuciaMoreno() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                alt="Interior de la academia de danza"
+                src="/historia.jpg"
+                alt="Lucía Moreno - Historia de pasión por la danza"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-2xl"
@@ -125,40 +125,45 @@ export default function AcademiaDanzaLuciaMoreno() {
               <h3 className="text-3xl font-serif font-bold text-flamenco-red-900">Una Historia de Pasión</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
                 ¡Hola a todos! Soy Lucía Moreno, fundadora y directora de la Academia de Danza Lucía Moreno. 
-                Estoy muy emocionada de poder llevar a cabo este nuevo proyecto, con lo que significa para mí la danza.
+                Mi pasión por la danza comenzó desde muy temprana edad, cuando con solo 3 años ya empezaba a 
+                dar mis primeros pasos en el mundo del flamenco y el clásico.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Mi amor por la danza me ha llevado a crear esta academia, donde quiero compartir mis conocimientos 
-                y experiencias con todos vosotros. Nuestro objetivo es que nuestros alumnos consigan una técnica 
-                correcta mientras que disfruten y aprendan en cada una de sus clases sin importar su nivel ni su experiencia.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Si estás buscando un lugar donde puedas crecer, expresarte libremente y formar parte de una gran 
-                familia apasionada por la danza, no dudes en preguntarnos cualquier duda que tengas.
-              </p>
-              <div className="grid grid-cols-3 gap-4 pt-6">
-                <div className="text-center">
-                  <div className="bg-flamenco-red-900 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
-                    <Users className="h-8 w-8" />
+                             <p className="text-gray-700 text-lg leading-relaxed">
+                 Conforme pasaron los años, me fui formando más específicamente en cada especialidad, 
+                 dedicando un total de 11 años de formación: 4 años en el conservatorio y 7 años en 
+                 academias privadas. Esta formación me ha permitido desarrollar una técnica sólida y 
+                 una comprensión profunda de las diferentes disciplinas de la danza.
+               </p>
+                             <p className="text-gray-700 text-lg leading-relaxed">
+                 Antes de abrir mi propia academia en 2024, ya llevaba más de 5 años de experiencia 
+                 impartiendo clases en otras academias, donde he tenido el privilegio de formar a más 
+                 de 100 alumnos. Ahora, con mi propia academia, quiero compartir toda esta experiencia 
+                 y pasión con todos vosotros, creando un espacio donde cada alumno pueda crecer, 
+                 expresarse libremente y formar parte de una gran familia apasionada por la danza.
+               </p>
+                              <div className="grid grid-cols-3 gap-4 pt-6">
+                  <div className="text-center">
+                    <div className="bg-flamenco-red-900 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                      <Users className="h-8 w-8" />
+                    </div>
+                    <p className="font-semibold text-flamenco-red-900">+100</p>
+                    <p className="text-sm text-gray-600">Alumnos</p>
                   </div>
-                  <p className="font-semibold text-flamenco-red-900">+200</p>
-                  <p className="text-sm text-gray-600">Alumnas</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-flamenco-red-900 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
-                    <Award className="h-8 w-8" />
+                                     <div className="text-center">
+                     <div className="bg-flamenco-red-900 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                       <Award className="h-8 w-8" />
+                     </div>
+                     <p className="font-semibold text-flamenco-red-900">5+</p>
+                     <p className="text-sm text-gray-600">Años de Experiencia</p>
+                   </div>
+                  <div className="text-center">
+                    <div className="bg-flamenco-red-900 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                      <Heart className="h-8 w-8" />
+                    </div>
+                    <p className="font-semibold text-flamenco-red-900">2024</p>
+                    <p className="text-sm text-gray-600">Academia Fundada</p>
                   </div>
-                  <p className="font-semibold text-flamenco-red-900">15+</p>
-                  <p className="text-sm text-gray-600">Años</p>
                 </div>
-                <div className="text-center">
-                  <div className="bg-flamenco-red-900 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
-                    <Heart className="h-8 w-8" />
-                  </div>
-                  <p className="font-semibold text-flamenco-red-900">100%</p>
-                  <p className="text-sm text-gray-600">Pasión</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -177,48 +182,69 @@ export default function AcademiaDanzaLuciaMoreno() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              {
-                title: "Flamenco",
-                description: "La esencia del arte andaluz. Desde iniciación hasta nivel profesional.",
-                image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                ages: "Todos los niveles",
-                color: "bg-flamenco-red-900",
-              },
-              {
-                title: "Clásico",
-                description: "Base técnica fundamental para todas las disciplinas de danza.",
-                image: "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                ages: "Desde 3 años",
-                color: "bg-gray-800",
-              },
+                             {
+                 title: "Flamenco",
+                 description: "La esencia del arte andaluz. Desde iniciación hasta nivel profesional.",
+                 image: "/flamenco.jpg",
+                 ages: "Todas las edades",
+                 color: "bg-flamenco-red-900",
+               },
+               {
+                 title: "Clásico",
+                 description: "Base técnica fundamental para todas las disciplinas de danza.",
+                 image: "/clasico.jpg",
+                 ages: "Todas las edades",
+                 color: "bg-gray-800",
+               },
               {
                 title: "Urbano",
                 description: "Danza moderna y contemporánea con ritmos urbanos.",
-                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                image: "/urbano.jpg",
                 ages: "Todas las edades",
                 color: "bg-purple-700",
               },
               {
                 title: "Sevillanas",
                 description: "El baile popular andaluz por excelencia, tradición y alegría.",
-                image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                image: "/sevillana.jpg",
                 ages: "Todas las edades",
                 color: "bg-green-700",
               },
+                                            {
+                 title: "Barre",
+                 description: "Entrenamiento de fuerza y flexibilidad inspirado en el ballet.",
+                 image: "/barre.jpg",
+                 ages: "Adultos",
+                 color: "bg-pink-700",
+               },
+               {
+                 title: "Salsa y Bachata",
+                 description: "Ritmos latinos llenos de energía y pasión.",
+                 image: "/salsa.jpg",
+                 ages: "Adultos",
+                 color: "bg-orange-600",
+               },
               {
-                title: "Formación Profesional",
-                description: "Formación específica para acceso a conservatorios profesionales.",
-                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                ages: "10-18 años",
-                color: "bg-blue-700",
-              },
-              {
-                title: "Yoga & Funcional",
-                description: "Entrenamiento físico y mental para complementar la danza.",
-                image: "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                title: "Yoga",
+                description: "Equilibrio entre cuerpo y mente para complementar la danza.",
+                image: "/yoga.jpg",
                 ages: "Adultos",
-                color: "bg-andalusian-gold-600",
+                color: "bg-teal-600",
               },
+              {
+                title: "Funcional",
+                description: "Entrenamiento funcional para mejorar el rendimiento en danza.",
+                image: "/funcional.jpg",
+                ages: "Adultos",
+                color: "bg-blue-600",
+              },
+                             {
+                 title: "Zumba",
+                 description: "Fitness divertido con ritmos latinos y música energética.",
+                 image: "/zumba.jpg",
+                 ages: "Adultos",
+                 color: "bg-red-600",
+               },
             ].map((disciplina, index) => (
               <Card key={index} className="group hover:shadow-2xl transition-all duration-300 overflow-hidden">
                 <div className="relative h-64 overflow-hidden">
@@ -235,14 +261,8 @@ export default function AcademiaDanzaLuciaMoreno() {
                   <CardTitle className="text-2xl font-serif text-flamenco-red-900">{disciplina.title}</CardTitle>
                   <CardDescription className="text-gray-700 text-base">{disciplina.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <Button
-                    variant="outline"
-                    className="w-full border-flamenco-red-900 text-flamenco-red-900 hover:bg-flamenco-red-900 hover:text-white bg-transparent"
-                  >
-                    Más Información
-                  </Button>
-                </CardContent>
+                                 <CardContent>
+                 </CardContent>
               </Card>
             ))}
           </div>
@@ -275,31 +295,24 @@ export default function AcademiaDanzaLuciaMoreno() {
                     <p className="text-xl text-andalusian-gold-600 font-medium">Directora y Profesora Principal</p>
                   </div>
 
-                  <div className="space-y-4 text-gray-700">
-                    <p className="leading-relaxed">
-                      Bailarina y coreógrafa con más de 20 años de experiencia en el mundo del flamenco y la danza
-                      española. Formada en los mejores conservatorios de Andalucía y con una trayectoria artística que
-                      la ha llevado a escenarios nacionales e internacionales.
-                    </p>
+                                     <div className="space-y-4 text-gray-700">
+                     <p className="leading-relaxed">
+                       Mi pasión por la danza comenzó desde muy temprana edad, cuando con solo 3 años ya empezaba a 
+                       dar mis primeros pasos en el mundo del flamenco y el clásico.
+                     </p>
 
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-flamenco-red-900">Formación:</h4>
-                      <ul className="space-y-1 text-sm">
-                        <li>• Título Superior en Danza Española - Conservatorio de Sevilla</li>
-                        <li>• Especialización en Flamenco - Fundación Cristina Heeren</li>
-                        <li>• Certificación en Pedagogía de la Danza</li>
-                      </ul>
-                    </div>
+                     <p className="leading-relaxed">
+                       Conforme pasaron los años, me fui formando más específicamente en cada especialidad, 
+                       dedicando un total de 11 años de formación: 4 años en el conservatorio y 7 años en 
+                       academias privadas.
+                     </p>
 
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-flamenco-red-900">Reconocimientos:</h4>
-                      <ul className="space-y-1 text-sm">
-                        <li>• Premio Nacional de Danza Española (2018)</li>
-                        <li>• Medalla al Mérito Artístico de Almería</li>
-                        <li>• Colaboradora del Festival Internacional de Flamenco</li>
-                      </ul>
-                    </div>
-                  </div>
+                     <p className="leading-relaxed">
+                       Antes de abrir mi propia academia en 2024, ya llevaba más de 5 años de experiencia 
+                       impartiendo clases en otras academias, donde he tenido el privilegio de formar a más 
+                       de 100 alumnos.
+                     </p>
+                   </div>
 
                   <div className="flex space-x-4 mt-6">
                     <Button 
@@ -334,12 +347,12 @@ export default function AcademiaDanzaLuciaMoreno() {
             {[
               "/lucia-1.jpg",
               "/lucia-2.jpg",
-              "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-              "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-              "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-              "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-              "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-              "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+              "/academia.jpg",
+              "/flamenco.jpg",
+              "/clasico.jpg",
+              "/urbano.jpg",
+              "/sevillana.jpg",
+              "/barre.jpg",
             ].map((image, index) => (
               <div key={index} className="group relative overflow-hidden rounded-lg aspect-square">
                 <Image
@@ -365,55 +378,90 @@ export default function AcademiaDanzaLuciaMoreno() {
         </div>
       </section>
 
-      {/* Opiniones */}
-      <section className="py-20 bg-gradient-to-b from-white to-flamenco-red-50/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-flamenco-red-900 mb-4">
-              Lo Que Dicen Nuestras Familias
-            </h2>
-            <div className="w-24 h-1 bg-andalusian-gold-500 mx-auto mb-6"></div>
-          </div>
+             {/* Cursos Online */}
+       <section className="py-20 bg-gradient-to-b from-white to-flamenco-red-50/30">
+         <div className="container mx-auto px-4">
+           <div className="text-center mb-16">
+             <h2 className="text-4xl md:text-5xl font-serif font-bold text-flamenco-red-900 mb-4">
+               Cursos Online
+             </h2>
+             <div className="w-24 h-1 bg-andalusian-gold-500 mx-auto mb-6"></div>
+             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+               Próximamente podrás disfrutar de nuestras clases desde cualquier lugar del mundo
+             </p>
+           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "María José García",
-                role: "Madre de alumna",
-                text: "Aquí mi hija encontró su segunda casa. La profesionalidad de Lucía y el ambiente familiar hacen que cada clase sea especial.",
-                rating: 5,
-              },
-              {
-                name: "Carmen Ruiz",
-                role: "Alumna adulta",
-                text: "Nunca pensé que podría aprender flamenco a los 45 años. Lucía me demostró que nunca es tarde para cumplir un sueño.",
-                rating: 5,
-              },
-              {
-                name: "Antonio Martínez",
-                role: "Padre de alumna",
-                text: "Una formación profesional y humana excepcional. Mi hija ha crecido como artista y como persona en esta academia.",
-                rating: 5,
-              },
-            ].map((opinion, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                <CardContent className="space-y-4">
-                  <div className="flex justify-center space-x-1 mb-4">
-                    {[...Array(opinion.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-andalusian-gold-400 text-andalusian-gold-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 italic text-lg leading-relaxed">"{opinion.text}"</p>
-                  <div>
-                    <p className="font-semibold text-flamenco-red-900">{opinion.name}</p>
-                    <p className="text-sm text-gray-600">{opinion.role}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+           <div className="max-w-4xl mx-auto">
+             <Card className="overflow-hidden shadow-2xl">
+               <div className="md:flex">
+                 <div className="md:w-1/2 bg-gradient-to-br from-flamenco-red-900 to-flamenco-red-800 p-8 flex items-center justify-center">
+                   <div className="text-center text-white">
+                     <div className="bg-white/20 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                       <Sparkles className="h-12 w-12" />
+                     </div>
+                     <h3 className="text-2xl font-serif font-bold mb-4">En Desarrollo</h3>
+                     <p className="text-lg opacity-90">
+                       Estamos trabajando para ofrecerte la mejor experiencia online posible
+                     </p>
+                   </div>
+                 </div>
+                 <div className="md:w-1/2 p-8">
+                   <div className="space-y-6">
+                     <h3 className="text-3xl font-serif font-bold text-flamenco-red-900">Formación Digital</h3>
+                     <p className="text-gray-700 text-lg leading-relaxed">
+                       Estamos desarrollando una plataforma online que te permitirá acceder a clases de flamenco, 
+                       clásico, urbano y todas nuestras disciplinas desde la comodidad de tu hogar.
+                     </p>
+                     
+                     <div className="space-y-4">
+                       <div className="flex items-center space-x-3">
+                         <div className="bg-andalusian-gold-100 rounded-full p-2">
+                           <Music className="h-5 w-5 text-andalusian-gold-600" />
+                         </div>
+                         <span className="text-gray-700">Clases en vivo y grabadas</span>
+                       </div>
+                       <div className="flex items-center space-x-3">
+                         <div className="bg-andalusian-gold-100 rounded-full p-2">
+                           <Users className="h-5 w-5 text-andalusian-gold-600" />
+                         </div>
+                         <span className="text-gray-700">Comunidad online de alumnos</span>
+                       </div>
+                       <div className="flex items-center space-x-3">
+                         <div className="bg-andalusian-gold-100 rounded-full p-2">
+                           <Award className="h-5 w-5 text-andalusian-gold-600" />
+                         </div>
+                         <span className="text-gray-700">Certificados de progreso</span>
+                       </div>
+                       <div className="flex items-center space-x-3">
+                         <div className="bg-andalusian-gold-100 rounded-full p-2">
+                           <Heart className="h-5 w-5 text-andalusian-gold-600" />
+                         </div>
+                         <span className="text-gray-700">Seguimiento personalizado</span>
+                       </div>
+                     </div>
+
+                     <div className="bg-andalusian-gold-50 border border-andalusian-gold-200 rounded-lg p-6">
+                       <h4 className="font-semibold text-andalusian-gold-800 mb-2">🚀 Próximamente</h4>
+                       <p className="text-andalusian-gold-700">
+                         Estamos trabajando arduamente para poder ofrecerles la mejor experiencia posible. 
+                         ¡Mantente atento a nuestras redes sociales para ser el primero en conocer el lanzamiento!
+                       </p>
+                     </div>
+
+                     <Button 
+                       className="w-full bg-flamenco-red-900 hover:bg-flamenco-red-800 text-white"
+                       onClick={() => window.open('https://www.instagram.com/academiadedanzaluciamoreno/', '_blank')}
+                     >
+                       <Instagram className="mr-2 h-5 w-5" />
+                       Síguenos para Novedades
+                     </Button>
+                   </div>
+                 </div>
+               </div>
+             </Card>
+           </div>
+         </div>
+       </section>
 
       {/* Contacto y Ubicación */}
       <section id="contacto" className="py-20 bg-white">
@@ -423,130 +471,85 @@ export default function AcademiaDanzaLuciaMoreno() {
             <div className="w-24 h-1 bg-andalusian-gold-500 mx-auto mb-6"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <Card className="p-8">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-serif text-flamenco-red-900 mb-4">Información de Contacto</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <MapPin className="h-6 w-6 text-flamenco-red-900" />
-                    <div>
-                      <p className="font-semibold">Dirección</p>
-                      <p className="text-gray-600">Centro Comercial Montepinar, Local n11, Murcia</p>
-                    </div>
-                  </div>
+                     <div className="grid lg:grid-cols-2 gap-12">
+             <div>
+               <Card className="p-8">
+                 <CardHeader>
+                   <CardTitle className="text-2xl font-serif text-flamenco-red-900 mb-4">Información de Contacto</CardTitle>
+                 </CardHeader>
+                 <CardContent className="space-y-6">
+                   <div className="flex items-center space-x-4">
+                     <MapPin className="h-6 w-6 text-flamenco-red-900" />
+                     <div>
+                       <p className="font-semibold">Dirección</p>
+                       <p className="text-gray-600">Centro Comercial Montepinar, Local n11, Murcia</p>
+                     </div>
+                   </div>
 
-                  <div className="flex items-center space-x-4">
-                    <Phone className="h-6 w-6 text-flamenco-red-900" />
-                    <div>
-                      <p className="font-semibold">Teléfono</p>
-                      <p className="text-gray-600">+34 600 116 127</p>
-                    </div>
-                  </div>
+                   <div className="flex items-center space-x-4">
+                     <Phone className="h-6 w-6 text-flamenco-red-900" />
+                     <div>
+                       <p className="font-semibold">Teléfono</p>
+                       <p className="text-gray-600">+34 600 116 127</p>
+                     </div>
+                   </div>
 
-                  <div className="flex items-center space-x-4">
-                    <Mail className="h-6 w-6 text-flamenco-red-900" />
-                    <div>
-                      <p className="font-semibold">Email</p>
-                      <p className="text-gray-600">info@academialuciamoreno.com</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-4">
-                    <Clock className="h-6 w-6 text-flamenco-red-900" />
-                    <div>
-                      <p className="font-semibold">Horarios</p>
-                      <p className="text-gray-600">Lunes a Viernes: 16:00 - 21:00</p>
-                      <p className="text-gray-600">Sábados: 10:00 - 14:00</p>
-                    </div>
-                  </div>
-
-                  <div className="pt-6">
-                    <h4 className="font-semibold text-flamenco-red-900 mb-4">Síguenos en Redes Sociales</h4>
-                    <div className="flex space-x-4">
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
-                        className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent"
-                        onClick={() => window.open('https://www.instagram.com/academiadedanzaluciamoreno/', '_blank')}
-                      >
-                        <Instagram className="h-4 w-4 mr-2" />
-                        Instagram
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
-                        className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent"
-                        onClick={() => window.open('https://www.tiktok.com/@academiadanzaluciamoreno', '_blank')}
-                      >
-                        <Music className="h-4 w-4 mr-2" />
-                        TikTok
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div>
-              <Card className="p-8">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-serif text-flamenco-red-900 mb-4">Solicita Información</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
+                                       <div className="flex items-center space-x-4">
+                      <Mail className="h-6 w-6 text-flamenco-red-900" />
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
-                        <Input placeholder="Tu nombre" />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">Apellidos</label>
-                        <Input placeholder="Tus apellidos" />
+                        <p className="font-semibold">Email</p>
+                        <p className="text-gray-600">edanzaluciamoreno@gmail.com</p>
                       </div>
                     </div>
 
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                      <Input type="email" placeholder="tu@email.com" />
+                                       <div className="flex items-center space-x-4">
+                      <Clock className="h-6 w-6 text-flamenco-red-900" />
+                      <div>
+                        <p className="font-semibold">Horarios</p>
+                        <p className="text-gray-600">Lunes a Viernes: 10:00 - 12:00 y 16:00 - 22:00</p>
+                        <p className="text-gray-600">Sábados: 9:00 - 13:00</p>
+                      </div>
                     </div>
 
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
-                      <Input type="tel" placeholder="+34 600 000 000" />
-                    </div>
+                   <div className="pt-6">
+                     <h4 className="font-semibold text-flamenco-red-900 mb-4">Síguenos en Redes Sociales</h4>
+                     <div className="flex space-x-4">
+                       <Button 
+                         variant="outline" 
+                         size="sm" 
+                         className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent"
+                         onClick={() => window.open('https://www.instagram.com/academiadedanzaluciamoreno/', '_blank')}
+                       >
+                         <Instagram className="h-4 w-4 mr-2" />
+                         Instagram
+                       </Button>
+                                               <Button 
+                          variant="outline" 
+                          size="sm" 
+                          className="border-flamenco-red-900 text-flamenco-red-900 bg-transparent"
+                          onClick={() => window.open('https://www.tiktok.com/@academiadanzaluciamoreno', '_blank')}
+                        >
+                          <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                          </svg>
+                          TikTok
+                        </Button>
+                     </div>
+                   </div>
+                 </CardContent>
+               </Card>
+             </div>
 
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Disciplina de Interés</label>
-                      <select className="w-full p-3 border border-gray-300 rounded-md">
-                        <option>Selecciona una disciplina</option>
-                        <option>Flamenco</option>
-                        <option>Clásico</option>
-                        <option>Urbano</option>
-                        <option>Sevillanas</option>
-                        <option>Formación Profesional</option>
-                        <option>Yoga</option>
-                        <option>Funcional</option>
-                        <option>Barre</option>
-                        <option>Salsa y Bachata</option>
-                        <option>Zumba Funcional</option>
-                        <option>Clases Privadas</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
-                      <Textarea placeholder="Cuéntanos sobre tu interés en la danza..." rows={4} />
-                    </div>
-
-                    <Button className="w-full bg-flamenco-red-900 hover:bg-flamenco-red-800 text-white py-3">Enviar Solicitud</Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+             <div>
+               <Image
+                 src="/academia.jpg"
+                 alt="Interior de la academia de danza"
+                 width={500}
+                 height={600}
+                 className="rounded-lg shadow-2xl w-full h-full object-cover"
+               />
+             </div>
+           </div>
 
           {/* Mapa */}
           <div className="mt-12">
@@ -696,9 +699,9 @@ export default function AcademiaDanzaLuciaMoreno() {
                 />
                 <h3 className="text-xl font-serif font-bold">Academia Lucía Moreno</h3>
               </div>
-              <p className="text-gray-400 mb-4">
-                Pasión, disciplina y arte en cada paso. La mejor formación en danza española y flamenco en Almería.
-              </p>
+                             <p className="text-gray-400 mb-4">
+                 Pasión, disciplina y arte en cada paso. La mejor formación en danza española y flamenco en Murcia.
+               </p>
               <div className="flex space-x-4">
                 <Button 
                   variant="ghost" 
@@ -708,14 +711,16 @@ export default function AcademiaDanzaLuciaMoreno() {
                 >
                   <Instagram className="h-5 w-5" />
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="text-white hover:text-flamenco-red-500"
-                  onClick={() => window.open('https://www.tiktok.com/@academiadanzaluciamoreno', '_blank')}
-                >
-                  <Music className="h-5 w-5" />
-                </Button>
+                                 <Button 
+                   variant="ghost" 
+                   size="sm" 
+                   className="text-white hover:text-flamenco-red-500"
+                   onClick={() => window.open('https://www.tiktok.com/@academiadanzaluciamoreno', '_blank')}
+                 >
+                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                     <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                   </svg>
+                 </Button>
               </div>
             </div>
 
@@ -744,12 +749,27 @@ export default function AcademiaDanzaLuciaMoreno() {
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Formación Profesional
+                    Barre
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Yoga & Funcional
+                    Salsa y Bachata
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Yoga
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Funcional
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Zumba
                   </Link>
                 </li>
               </ul>
@@ -797,10 +817,10 @@ export default function AcademiaDanzaLuciaMoreno() {
                   <Phone className="h-4 w-4 mr-2" />
                   +34 600 116 127
                 </p>
-                <p className="flex items-center">
-                  <Mail className="h-4 w-4 mr-2" />
-                  info@academialuciamoreno.com
-                </p>
+                                 <p className="flex items-center">
+                   <Mail className="h-4 w-4 mr-2" />
+                   edanzaluciamoreno@gmail.com
+                 </p>
               </div>
             </div>
           </div>
@@ -811,15 +831,15 @@ export default function AcademiaDanzaLuciaMoreno() {
         </div>
       </footer>
 
-      {/* WhatsApp Float Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <Button 
-          className="bg-green-500 hover:bg-green-600 text-white rounded-full w-14 h-14 shadow-lg"
-          onClick={() => window.open('https://wa.me/34600116127?text=Hola! Me gustaría información sobre las clases de danza', '_blank')}
-        >
-          <Phone className="h-6 w-6" />
-        </Button>
-      </div>
+             {/* WhatsApp Float Button */}
+       <div className="fixed bottom-6 right-6 z-50">
+         <Button 
+           className="bg-green-500 hover:bg-green-600 text-white rounded-full w-14 h-14 shadow-lg"
+           onClick={() => window.open('https://wa.me/34600116127?text=Hola! Me gustaría información sobre las clases de danza', '_blank')}
+         >
+           <span className="text-xl">💬</span>
+         </Button>
+       </div>
     </div>
   )
 } 
