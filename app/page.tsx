@@ -26,7 +26,72 @@ import Link from "next/link"
 
 export default function AcademiaDanzaLuciaMoreno() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "DanceSchool",
+            "name": "Academia de Danza Lucía Moreno",
+            "description": "Academia de danza en Montepinar, Murcia. Clases de flamenco, clásico, urbano, sevillanas, salsa, bachata, yoga, funcional, barre y zumba.",
+            "url": "https://academialuciamoreno.com",
+            "telephone": "+34 600 116 127",
+            "email": "edanzaluciamoreno@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Centro Comercial Montepinar, Local n11",
+              "addressLocality": "Murcia",
+              "addressRegion": "Murcia",
+              "postalCode": "30008",
+              "addressCountry": "ES"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 38.0422,
+              "longitude": -1.1026
+            },
+            "openingHours": [
+              "Mo-Fr 10:00-12:00,16:00-22:00",
+              "Sa 09:00-13:00"
+            ],
+            "priceRange": "€€",
+            "curriculum": [
+              "Flamenco",
+              "Danza Clásica", 
+              "Danza Urbana",
+              "Sevillanas",
+              "Salsa y Bachata",
+              "Yoga",
+              "Entrenamiento Funcional",
+              "Barre",
+              "Zumba"
+            ],
+            "founder": {
+              "@type": "Person",
+              "name": "Lucía Moreno",
+              "jobTitle": "Directora y Profesora Principal",
+              "description": "Bailarina y profesora con más de 5 años de experiencia, formada en conservatorio y academias privadas"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "100+"
+            },
+            "image": [
+              "https://academialuciamoreno.com/hero.jpg",
+              "https://academialuciamoreno.com/academia.jpg"
+            ],
+            "sameAs": [
+              "https://www.instagram.com/academiadedanzaluciamoreno/",
+              "https://www.tiktok.com/@academiadanzaluciamoreno"
+            ]
+          })
+        }}
+      />
+      
+      <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-flamenco-red-900/10">
         <div className="container mx-auto px-4 py-4">
@@ -77,12 +142,12 @@ export default function AcademiaDanzaLuciaMoreno() {
           priority
         />
         <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight text-shadow">
-            Pasión, Disciplina y Arte
-            <span className="block text-3xl md:text-4xl text-andalusian-gold-300 mt-2">en cada paso</span>
-          </h1>
+                     <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight text-shadow">
+             Academia de Danza Lucía Moreno
+             <span className="block text-3xl md:text-4xl text-andalusian-gold-300 mt-2">Flamenco y Danza en Montepinar, Murcia</span>
+           </h1>
                      <p className="text-xl md:text-2xl mb-8 text-gray-200">
-             Descubre el arte del flamenco y la danza española en el corazón de Murcia
+             Academia de danza en Montepinar, Murcia. Clases de flamenco, clásico, urbano, sevillanas, salsa, bachata, yoga, funcional, barre y zumba
            </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-flamenco-red-900 hover:bg-flamenco-red-800 text-white px-8 py-4 text-lg flamenco-shadow">
@@ -106,9 +171,9 @@ export default function AcademiaDanzaLuciaMoreno() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-flamenco-red-900 mb-4">Nuestra Academia</h2>
             <div className="w-24 h-1 bg-andalusian-gold-500 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Un espacio donde el arte flamenco cobra vida, dirigido por la pasión y experiencia de Lucía Moreno
-            </p>
+                         <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+               Academia de danza en Montepinar, Murcia. Especialistas en flamenco, danza española, clásico, urbano, sevillanas, salsa, bachata, yoga, funcional, barre y zumba. Profesora Lucía Moreno con más de 5 años de experiencia.
+             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -175,9 +240,9 @@ export default function AcademiaDanzaLuciaMoreno() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-flamenco-red-900 mb-4">Nuestras Disciplinas</h2>
             <div className="w-24 h-1 bg-andalusian-gold-500 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Ofrecemos una formación completa en las diferentes modalidades de la danza española y flamenca
-            </p>
+                         <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+               Clases de danza en Montepinar, Murcia: flamenco, clásico, urbano, sevillanas, salsa, bachata, yoga, funcional, barre y zumba. Academia de danza Lucía Moreno.
+             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -700,7 +765,7 @@ export default function AcademiaDanzaLuciaMoreno() {
                 <h3 className="text-xl font-serif font-bold">Academia Lucía Moreno</h3>
               </div>
                              <p className="text-gray-400 mb-4">
-                 Pasión, disciplina y arte en cada paso. La mejor formación en danza española y flamenco en Murcia.
+                 Academia de danza en Montepinar, Murcia. Clases de flamenco, clásico, urbano, sevillanas, salsa, bachata, yoga, funcional, barre y zumba. Profesora Lucía Moreno con más de 5 años de experiencia.
                </p>
               <div className="flex space-x-4">
                 <Button 
@@ -839,7 +904,8 @@ export default function AcademiaDanzaLuciaMoreno() {
          >
            <span className="text-xl">💬</span>
          </Button>
-       </div>
-    </div>
+               </div>
+      </div>
+    </>
   )
 } 
